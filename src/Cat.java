@@ -33,9 +33,9 @@ public class Cat {
 		g2.setColor(Color.red);  //changed color to red from green
 		x = catX + EYE_X; 
 		y = catY + EYE_Y;
-		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
+		g2.fillOval(x, y, EYE_WIDTH*2, EYE_HEIGHT*2); // Doubled eye size
 		x += EYE_SEPARATION;
-		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
+		g2.fillOval(x, y, EYE_WIDTH*2, EYE_HEIGHT*2); // Doubled eye size
 		// Draw the mouth
 		g2.setColor(Color.pink);
 		x = catX + MOUTH_X;
@@ -44,7 +44,7 @@ public class Cat {
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g2.drawString("help ඞඞඞඞඞඞඞඞඞඞඞඞඞ!!!!", catX, catY+HEAD_DIMENSION+30);   
+		g2.drawString("help ඞඞඞඞඞඞඞඞඞඞඞඞඞ!!!!", catX, catY+HEAD_DIMENSION+30);
 		//changed from Meow to that	
 	}
 }
